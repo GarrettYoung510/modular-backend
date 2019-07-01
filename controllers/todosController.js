@@ -1,7 +1,7 @@
 const connection = require('./../config/connection.js');
 // usually do not have to put.js after last file but lets others know
 // that you created it
-
+// what did they hit, and goes out to the model
 module.exports = {
     findAll: (req, res) => {
         connection.query('SELECT * FROM todos;', (err, todos) => {
